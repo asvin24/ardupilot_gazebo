@@ -10,6 +10,7 @@
           </plane>
         </geometry>
       </collision>
+      <!--
       <visual name="runway">
         <pose degrees="true">0 0 0 0 0 90</pose>
         <cast_shadows>false</cast_shadows>
@@ -31,19 +32,20 @@
             </metal>
           </pbr>
         </material>
-      </visual>
+      </visual> -->
       <visual name="airfield">
-        <pose>0 0 -0.01 0 0 0</pose>
+        <pose>50 -450 -0.1 0 0 -0.05</pose>
         <cast_shadows>false</cast_shadows>
         <geometry>
           <mesh>
             <uri>model://runway/meshes/airfield.dae</uri>
+            <scale>0.011 0.0201 1</scale>
           </mesh>
         </geometry>
         <material>
-          <ambient>0.8 0.8 0.8 1</ambient>
+          <ambient>1 1 1 1</ambient>
           <diffuse>0.8 0.8 0.8 1</diffuse>
-          <specular>0.1 0.1 0.1 1</specular>
+          <specular>0 0 0 1</specular>
           <pbr>
             <metal>
               <albedo_map>materials/textures/Grass004_2K_Color.jpg</albedo_map>
